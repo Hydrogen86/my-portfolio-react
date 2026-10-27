@@ -8,10 +8,10 @@ ul {
 
 header {
     background-color: var(--main-color);
-    padding: 1rem 5rem;
+    padding: 1rem clamp(1rem, 2vw, 5rem);
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: clamp(1rem, 2vw, 2rem);
     max-height: 70px;
 }
 
@@ -19,17 +19,17 @@ header {
     font-family: var(--logo-font);
     font-weight: bolder;
     color: var(--pastel);
-    font-size: 1.4rem;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
     text-transform: uppercase;
 }
 
-.right-side__header {
-    gap: 5rem;
+ul {
+    gap: clamp(1rem, 2vw, 5rem);
 }
 
 ul {
     align-items: center;
-    gap: 2rem;
+    gap: clamp(.8rem, 2vw, 3rem);
     margin: 0;
     padding: 0;
 }
@@ -41,7 +41,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-family: var(----large-font);
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     font-weight: bolder;
     color: var(--text-color);
     text-align: center;
@@ -78,12 +78,8 @@ ul a:hover {
   color: var(--highlights);
 }
 
-
-
-
-
-
-.right-side__header button {
+/* Let's Work Together Button */
+nav button {
     padding: .5rem 1rem;
     border-radius: 8px;
     border: none;
@@ -95,6 +91,64 @@ ul a:hover {
     font-weight: bolder;
 }
 
-.right-side__header button:hover {
+nav button:hover {
     background-color: var(--highlights);
+}
+
+
+.icon__header {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon__header img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+@media (max-width: 750px) {
+    .icon__header {
+        display: block;
+    }
+
+    ul {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    header nav {
+        position: absolute;
+        top: 3.7rem;
+        left: 0;
+        width: 100%;
+
+        gap: 1rem;
+
+        padding: 1rem 1.1rem 1rem 0;
+
+        /* Hidden by default */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-10px);
+
+        /* Smooth animation */
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    header nav.nav-open {
+        /* Show when clicked */
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
 }
