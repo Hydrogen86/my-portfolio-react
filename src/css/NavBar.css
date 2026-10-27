@@ -1,0 +1,57 @@
+@import url('../App.css');
+
+header,
+.right-side__header,
+nav {
+    display: flex;
+}
+
+header {
+    background-color: var(--main-color);
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-height: 70px;
+}
+
+.developer-name {
+    font-family: var(--logo-font);
+    font-weight: bolder;
+    color: var(--pastel);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.right-side__header {
+    gap: 5rem;
+}
+
+nav {
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: var(----large-font);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.right-side__header button {
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--pastel);
+    color: var(--main-color);
+    font-family: var(--main-font);
+    cursor: pointer;
+    transition: .3s ease-in;
+    font-weight: bolder;
+}
+
+.right-side__header button:hover {
+    background-color: var(--highlights);
+}

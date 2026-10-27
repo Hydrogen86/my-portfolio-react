@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap');
+
 :root {
-  --main-color: #fffff;
-  --highlight: red;
+  --main-color: #ffffff;
+  --pastel: #ff7017;
+  --highlights: #e45d09;
+
+  /* Text */
+  --text-color: #363636;
+  --text-muted: #555555;
+
+  --main-font: "Inter", sans-serif;
+  --logo-font : "Righteous", cursive;
+  --large-font: "Poppins", sans-serif;
 }
 
 * {
@@ -10,5 +21,5 @@
 }
 
 body {
-  background-color: black;
+  font-family: var(--main-font);
 }
