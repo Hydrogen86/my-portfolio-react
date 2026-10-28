@@ -26,8 +26,6 @@ body {
   font-family: var(--main-font);
 }
 
-@media (max-width: 750px) {
-  section {
-    padding: 1rem;
-  }
+section {
+  padding: 0 1rem;
 }

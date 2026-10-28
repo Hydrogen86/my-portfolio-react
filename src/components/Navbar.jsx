@@ -14,8 +14,24 @@ const Navbar = () => {
     setIsMenuOpen(false)
   }
 
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Set the initial state
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={scrolled ? "scrolled" : ""}>
       <span className='developer-name'>{ userData.firstName }.</span>
 
       <nav className={ isMenuOpen ? "nav-open" : "" }>

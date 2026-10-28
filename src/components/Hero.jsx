@@ -1,11 +1,14 @@
 import React from 'react'
 import { userData } from '../data/user-data.js'
-import { images } from '../assets/image-icons.js'
+import { images, icons } from '../assets/image-icons.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRightLong, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import '../css/Hero.css'
 
 const Hero = () => {
   return (
     <section className='hero-section'>
+        <div className="overlay"></div>
         <div className="left">
             <div className="user-name">
                 <span>HELLO, I'M</span>
@@ -16,22 +19,13 @@ const Hero = () => {
                 <p>I designs and builds modern, responsive, and user-friendly web experiences that help businesses grow and connect with their audience.</p>
             </div>
             <div className="hero__btn">
-                <button>VIEW MY PROJECTS</button>
-                <button>DOWNLOAD CV</button>
+                <button>VIEW MY PROJECTS <FontAwesomeIcon icon={faArrowRightLong} /></button>
+                <button>DOWNLOAD CV <FontAwesomeIcon icon={faArrowDown} /></button>
             </div>
         </div>
 
         <div className="right">
             <img src={images.heroImage} alt="developer-img" />
-            <div className="txt-area">
-                <span className='signature'>
-                    { userData.firstName } { userData.lastname }
-                </span>
-                <span>
-                    <div className="cricle"></div>
-                    AVAILABLE FOR FREELANCE
-                </span>
-            </div>
         </div>
     </section>
   )
