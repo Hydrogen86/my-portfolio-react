@@ -6,6 +6,7 @@
     align-items: center;
     gap: 5rem;
     background-color: inherit;
+    padding-top: clamp(3rem, 20vw, 6rem);
 }
 
 .hero-section .left {
@@ -105,7 +106,7 @@
 }
 
 .hero-section .right img{
-    width: 400px;
+    width: clamp(300px, 30vw, 400px);
     height: 100%;
     object-fit: contain;
 }
@@ -123,5 +124,9 @@
 @media (max-width: 750px) {
     .hero-section {
         flex-direction: column;
+    }
+    .hero-section .right .txt-area {
+        position: relative;
+        inset: 0;
     }
 }

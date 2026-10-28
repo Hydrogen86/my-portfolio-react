@@ -13,6 +13,8 @@ header {
     align-items: center;
     gap: clamp(1rem, 2vw, 2rem);
     max-height: 70px;
+    position: fixed;
+    width: 100%;
 }
 
 .developer-name {
@@ -136,6 +138,8 @@ nav button:hover {
         visibility: hidden;
         pointer-events: none;
         transform: translateY(-10px);
+        background-color: var(--main-color);
+        box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 
         /* Smooth animation */
         transition:
