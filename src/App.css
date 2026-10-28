@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900;1000&family=Poppins:wght@400;500;600;700;800;900;1000&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 :root {
   --main-color: #ffffff;
@@ -12,6 +13,7 @@
   --main-font: "Inter", sans-serif;
   --logo-font : "Righteous", cursive;
   --large-font: "Poppins", sans-serif;
+  --signature-font: "Alex Brush", cursive;
 }
 
 * {

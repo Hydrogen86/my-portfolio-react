@@ -50,12 +50,6 @@ const toolsAndPlatforms = [
     "Canva"
 ]
 
-const images = {
-    heroImg: {
-
-    },
-
-}
 
 
 export {
@@ -63,6 +57,5 @@ export {
     computerLanguages,
     database,
     librariesAndFramework,
-    toolsAndPlatforms,
-    images
+    toolsAndPlatforms
 }

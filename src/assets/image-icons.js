@@ -9,6 +9,18 @@ const icons = {
     menu
 }
 
+
+//-----------------------------------
+//-------------IMAGES----------------
+//-----------------------------------
+import heroImg from './images/hero-section-img.png'
+import aboutImg from './images/about-img.png'
+const images = {
+    heroImage: heroImg,
+    aboutImage: aboutImg
+}
+
 export {
-    icons
+    icons,
+    images
 }

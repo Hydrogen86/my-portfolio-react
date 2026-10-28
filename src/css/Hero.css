@@ -1,0 +1,127 @@
+@import url('../App.css');
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: inherit;
+}
+
+.hero-section .left {
+    max-width: 600px;
+}
+
+.hero-section .left .user-name{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--large-font);
+    line-height: 2.8rem;
+    color: var(--text-color);
+}
+.user-name span:nth-child(2) {
+    color: var(--pastel);
+}
+.user-name span:nth-child(3), 
+.user-name span:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.left .description {
+    margin: 1.5rem 0;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--text-muted);
+}
+
+.left .hero__btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.left .hero__btn button {
+    width: 100%;
+    padding: .8rem 0;
+    border: 2px solid gray;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.left .hero__btn button:nth-child(1) {
+    background-color: var(--pastel);
+    color: var(--main-color);
+    border: none;
+}
+
+.hero-section .right {
+    position: relative;
+}
+
+.hero-section .right .txt-area {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--main-color);
+    background-color: #0e0e0e;
+    padding: 1rem;
+
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+
+    font-size: 1rem;
+    width: 320px;
+}
+
+.right .txt-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #2563eb;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        90% 100%,
+        0 100%
+    );
+    z-index: -1;
+}
+
+.right .signature {
+    font-family: var(--signature-font);
+    color: var(--pastel);
+    font-size: 2rem;
+}
+
+.right .txt-area span:nth-child(2) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .6rem;
+}
+
+.hero-section .right img{
+    width: 400px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right .cricle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--pastel);
+}
+
+
+
+
+@media (max-width: 750px) {
+    .hero-section {
+        flex-direction: column;
+    }
+}

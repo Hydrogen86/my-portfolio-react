@@ -27,7 +27,7 @@ const Navbar = () => {
           <li><a href="#" onClick={closeMenu}>Projects</a></li>
           <li><a href="#" onClick={closeMenu}>Contact</a></li>
 
-          <button>LET'S WORK TOGETHER</button>
+          <button onClick={() => ShowAlert("In Progress", "The owner still on developing his personal Portfolio", "warning")}>LET'S WORK TOGETHER</button>
         </ul>
       </nav>
 
