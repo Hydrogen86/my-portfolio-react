@@ -3,17 +3,9 @@
 //-----------------------------------
 import exit from './icons/exit.png'
 import menu from './icons/menu.png'
-import calendar from './icons/calendar.png'
-import project from './icons/project.png'
-import rating from './icons/rating.png'
-import trophy from './icons/trophy.png'
 const icons = {
     exit,
-    menu,
-    calendar,
-    project,
-    rating,
-    trophy
+    menu
 }
 
 
