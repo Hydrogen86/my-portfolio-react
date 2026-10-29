@@ -1,0 +1,93 @@
+@import url('../App.css');
+
+.about-section {
+    display: flex;
+    width: 100%;
+    padding: clamp(1rem, 5vw, 4rem);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about__right-side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about__left-side,
+.about__right-side .card,
+.about__right-side .card .txt-area {
+    display: flex;
+}
+
+.card {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+.txt-area {
+    flex-direction: column;
+}
+
+.txt-area span:nth-child(1) {
+    font-family: var(--large-font);
+    font-weight: bolder;
+    color: var(--pastel);
+}
+
+.txt-area span:nth-child(2) {
+    font-size: clamp(.8rem, 2vw, 1rem);
+}
+
+
+/* 
+RIGHT SIDE
+*/
+.about__left-side {
+    flex-direction: column;
+    max-width: 400px;
+    color: var(--text-color);
+    gap: .5rem;
+}
+
+.about__left-side span:nth-child(1) {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.about__left-side span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--pastel);
+    font-family: var(--large-font);
+}
+
+.about__left-side span:nth-child(3) {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.about__left-side button {
+    padding: .5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--pastel);
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--large-font);
+}
+
+@media (max-width: 750px) {
+    .about-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+
+}

@@ -28,6 +28,10 @@ header.scrolled {
     color: var(--text-color);
 }
 
+header.scrolled a {
+    color: var(--text-color);
+}
+
 .developer-name {
     font-family: var(--logo-font);
     font-weight: bolder;

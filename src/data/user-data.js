@@ -4,7 +4,7 @@ const userData = {
     course: "BSI/T",
     speciality: "Software Developer",
 
-    yearsOfExp: 1,
+    yearsOfExp: "2+",
     projectCount: 8,
 
     municipality: "Marinduque",
@@ -50,6 +50,33 @@ const toolsAndPlatforms = [
     "Canva"
 ]
 
+const projects = [
+    {
+        projectName: "SwineGuard",
+        about: "Web-based Health Monitoring and Vaccination Tracker System",
+        techStack: "HTML, JavaScript, NodeJS, ExpressJS, & MongoDB"
+    },
+    {
+        projectName: "CarabaoCart",
+        about: "Web-Based Carabao Milk Supply and Dairy Product Management System",
+        techStack: "PHP, JavaScript, & MySQL"
+    },
+    {
+        projectName: "BikeZone",
+        about: "Web-based Bike Supply and Product Management System",
+        techStack: "HTML, JavaScript, & XML"
+    },
+    {
+        projectName: "Penro MArinduque Billing Collection System",
+        about: "Digital Billing Procedure of PENRO Marinduque",
+        techStack: "Laravel, JavaScript, & MySQL"
+    },
+    {
+        projectName: "Anime Theater",
+        about: "Web-based Video Streaming Site",
+        techStack: "React, & NodeJS"
+    },
+]
 
 
 export {
@@ -57,5 +84,6 @@ export {
     computerLanguages,
     database,
     librariesAndFramework,
-    toolsAndPlatforms
+    toolsAndPlatforms,
+    projects
 }
