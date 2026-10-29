@@ -25,7 +25,6 @@ header {
 
 header.scrolled {
     background-color: var(--main-color);
-
     color: var(--text-color);
 }
 
@@ -35,6 +34,7 @@ header.scrolled {
     color: var(--pastel);
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     text-transform: uppercase;
+    z-index: 1000;
 }
 
 ul {
@@ -57,7 +57,7 @@ nav ul li a {
     font-family: var(----large-font);
     font-size: clamp(1rem, 2vw, 1.1rem);
     font-weight: bolder;
-    color: inherit;
+    color: var(--main-color);
     text-align: center;
 
     position: relative;
@@ -115,6 +115,7 @@ nav button:hover {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .icon__header img{
@@ -123,9 +124,14 @@ nav button:hover {
     object-fit: contain;
 }
 
+
 @media (max-width: 750px) {
     .icon__header {
         display: block;
+    }
+
+    header nav ul li a {
+        color: var(--text-color);
     }
 
     ul {
@@ -137,15 +143,14 @@ nav button:hover {
 
     header nav {
         position: absolute;
-        top: 3.7rem;
+        top: 0;
         left: 0;
         width: 100%;
 
         gap: 1rem;
 
-        padding: 1rem 1.1rem 1rem 0;
+        padding: 5rem 1.1rem 1rem 0;
 
-        /* Hidden by default */
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -153,7 +158,6 @@ nav button:hover {
         background-color: var(--main-color);
         box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 
-        /* Smooth animation */
         transition:
             opacity 0.3s ease,
             transform 0.3s ease,
@@ -161,7 +165,6 @@ nav button:hover {
     }
 
     header nav.nav-open {
-        /* Show when clicked */
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
