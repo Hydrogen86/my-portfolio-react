@@ -3,7 +3,8 @@
 .offer-section {
     width: 100%;
     padding: 1rem;
-    background-color: var(--pastel);
+    /* background-color: var(--pastel); */
+    background: linear-gradient(150deg, var(--pastel), var(--pastel), var(--gradient));
     text-align: center;
     color: var(--main-color);
 
@@ -23,6 +24,7 @@
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 0;
     flex-wrap: wrap;
 }
