@@ -1,15 +1,26 @@
 @import url('../App.css');
 
 .skill-section {
-    background-color: green;
     text-align: center; 
-    padding: 1rem;
+    margin-top: 2rem;
+
+    h2 {
+        font-family: var(--large-font);
+        font-size: 2rem;
+        font-weight: bolder;
+        color: var(--pastel);
+    }
+    .top-span {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
 }
 .skill-list__container {
     display: flex;
-   align-items: stretch;
-    justify-content: space-evenly;
-
+    align-items: center;
+    justify-content: center;
+    gap: 5rem; 
     margin-top: 2rem;
 }
 
@@ -19,27 +30,86 @@
     object-fit: contain;
 }
 
-.skill-section__right {
-    border: 1px solid black;
-    padding: 1rem;
-    width: 700px;
-}
 
 .skill-list__container .skill-section__right .skill-list img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
+
+.skill-section__right {
+    padding: 1rem;;
+}
+.skill-nav-bar {
+    display: flex;
+    gap: 2rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--large-font);
+    color: var(--main-color);
+
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+}
+.skill-nav-bar span {
+    padding: .5rem 1rem;
+    color: var(--text-color);
+    position: relative;
+    transition: color 0.3s ease;
+
+}
+.skill-nav-bar span.active {
+    background-color: var(--pastel);
+    color: var(--main-color);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border: 2px solid var(--pastel);
+    border-bottom: none;
+}
+
+.skill-nav-bar span.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
 .skill-list {
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 60px;
+    gap: 0.5rem;
+    align-content: start;
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    border: 2px solid var(--pastel);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 1rem;
+}
+.skill-list .skill {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 1rem;
 
-    border: 1.5px solid var(--highlights);
-    border-radius: 8px;
-    max-width: 200px;
-    padding: .3rem;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.6rem;
+}
+
+.skill .skill-name {
+    font-weight: 400;
 }

@@ -28,49 +28,48 @@ import java from './icons/java.png'
 import js from './icons/js.png'
 import python from './icons/python.png'
 import php from './icons/php.png'
-const programLanguage = {
-    html: {
+const programLanguage = [
+    {
         name: "HTML",
         icon: html
     },
-    css: {
+    {
         name: "CSS",
         icon: css
     },
-    javascript: {
+    {
         name: "JavaScript",
         icon: js
     },
-    java: {
+    {
         name: "Java",
         icon: java
     },
-    python:
     {
         name: "Python",
         icon: python
     },
-    php: {
+    {
         name: "PHP",
         icon: php
     }
-}
+]
 
 //-----------------------------------
 //--------DATABASE MANAGEMENT--------
 //-----------------------------------
 import mongoDB from './icons/mongodb.png'
 import mySQL from './icons/mySQL.png'
-const databaseManagement = {
-    mongodb: {
+const databaseManagement = [
+    {
         name: "MongoDB",
         icon: mongoDB
     },
-    mysql: {
+    {
         name: "MySQL",
         icon: mySQL
     }
-}
+]
 
 //-----------------------------------
 //------FRAMEWORKS & LIBRARIES-------
@@ -79,28 +78,28 @@ import laravel from './icons/laravel.png'
 import react from './icons/atom.png'
 import bootstrap from './icons/bootstrap-icon-css.png'
 import nodeJS from './icons/nodejs.png'
-const frameworksAndLabraries = {
-    laravel: {
+const frameworksAndLabraries = [
+    {
         name: "Laravel",
         icon: laravel
     },
-    react: {
+    {
         name: "React",
         icon: react
     },
-    bootstrap: {
+    {
         name: "Bootstrap",
         icon: bootstrap
     },
-    nodejs: {
+    {
         name: "NodeJS",
         icon: nodeJS
     },
-    expressjs: {
+    {
         name: "Express JS",
         icon: js
     }
-}
+]
 
 //-----------------------------------
 //---------TOOLS & PLATFORMS---------
@@ -113,40 +112,40 @@ import xampp from './icons/xammp.png'
 import canva from './icons/canva.png'
 import mockPlus from './icons/mockplus.png'
 import figma from './icons/figma.png'
-const toolsAndPlatforms = {
-    andriodstudio: {
+const toolsAndPlatforms = [
+    {
         name: "Andriod Studio",
         icon: andriodStudio
     },
-    vscode: {
+    {
         name: "VS Code",
         icon: vsCode
     },
-    git: {
+    {
         name: "Git",
         icon: git
     },
-    github: {
+    {
         name: "GitHub",
         icon: gitHub
     },
-    xampp: {
+    {
         name: "XAMPP",
         icon: xampp
     },
-    figma: {
+    {
         name: "Figma",
         icon: figma
     },
-    mockplus: {
+    {
         name: "Mockplus",
         icon: mockPlus
     },
-    canva: {
+    {
         name: "Canva",
         icon: canva
     }
-}
+]
 
 
 //-----------------------------------
@@ -160,7 +159,12 @@ const images = {
     aboutImage: aboutImg
 }
 
+
 export {
     icons,
-    images
+    images,
+    programLanguage,
+    toolsAndPlatforms,
+    frameworksAndLabraries,
+    databaseManagement
 }
