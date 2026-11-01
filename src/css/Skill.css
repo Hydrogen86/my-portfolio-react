@@ -1,0 +1,45 @@
+@import url('../App.css');
+
+.skill-section {
+    background-color: green;
+    text-align: center; 
+    padding: 1rem;
+}
+.skill-list__container {
+    display: flex;
+   align-items: stretch;
+    justify-content: space-evenly;
+
+    margin-top: 2rem;
+}
+
+.skill-section .skill-list__container img {
+    width: 500px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skill-section__right {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 700px;
+}
+
+.skill-list__container .skill-section__right .skill-list img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill-list {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    border: 1.5px solid var(--highlights);
+    border-radius: 8px;
+    max-width: 200px;
+    padding: .3rem;
+}
