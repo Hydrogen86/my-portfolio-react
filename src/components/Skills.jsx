@@ -6,6 +6,7 @@ const Skills = () => {
     
     const [currentIndex, setCurrentIndex] = useState(0)
     const userSkills = [ programLanguage, frameworksAndLabraries, databaseManagement, toolsAndPlatforms ]
+    const skillCategories = [ "Languages", "Framework", "Database", "Tools" ];
 
   return (
     <section className='skill-section'>
@@ -18,23 +19,23 @@ const Skills = () => {
 
             <div className="skill-section__right">
                 <div className="skill-nav-bar">
-                    <span 
-                        className={currentIndex === 0 ? "active" : ""}
-                        onClick={() => setCurrentIndex(0)}
-                    >Languages</span>
-                    <span 
-                        className={currentIndex === 1 ? "active" : ""}
-                        onClick={() => setCurrentIndex(1)}
-                    >Framework & Libraries</span>
-                    <span 
-                        className={currentIndex === 2 ? "active" : ""}
-                        onClick={() => setCurrentIndex(2)}
-                    >Databse Management</span>
-                    <span 
-                        className={currentIndex === 3 ? "active" : ""}
-                        onClick={() => setCurrentIndex(3)}
-                    >Tools & Platforms</span>
-                </div>
+                <div
+                    className="nav-highlight"
+                    style={{
+                    transform: `translateX(${currentIndex * 100}%)`
+                    }}
+                />
+
+                {skillCategories.map((category, index) => (
+                    <span
+                        key={category}
+                        className={currentIndex === index ? "active" : ""}
+                        onClick={() => setCurrentIndex(index)}
+                    >
+                        {category}
+                    </span>
+                ))}
+            </div>
 
                 <div className="skill-list">
                     {userSkills[currentIndex].map((skill, index) => (
