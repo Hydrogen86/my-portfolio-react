@@ -52,6 +52,10 @@ const programLanguage = [
     {
         name: "PHP",
         icon: php
+    },
+    {
+        name: "C#",
+        icon: cSharp
     }
 ]
 

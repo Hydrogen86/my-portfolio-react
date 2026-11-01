@@ -70,7 +70,7 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
     .offer-section{
         padding: 1.5rem 1rem;
         margin-top: 2rem;

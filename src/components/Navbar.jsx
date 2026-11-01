@@ -36,10 +36,10 @@ const Navbar = () => {
 
       <nav className={ isMenuOpen ? "nav-open" : "" }>
         <ul>
-          <li><a href="#" onClick={closeMenu}>Home</a></li>
-          <li><a href="#" onClick={closeMenu}>About</a></li>
-          <li><a href="#" onClick={closeMenu}>Services</a></li>
-          <li><a href="#" onClick={closeMenu}>Skills</a></li>
+          <li><a href="#hero-section" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about-section" onClick={closeMenu}>About</a></li>
+          <li><a href="#offer-section" onClick={closeMenu}>Services</a></li>
+          <li><a href="#skill-section" onClick={closeMenu}>Skills</a></li>
           <li><a href="#" onClick={closeMenu}>Projects</a></li>
           <li><a href="#" onClick={closeMenu}>Contact</a></li>
 

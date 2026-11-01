@@ -9,7 +9,7 @@ const Skills = () => {
     const skillCategories = [ "Languages", "Framework", "Database", "Tools" ];
 
   return (
-    <section className='skill-section'>
+    <section className='skill-section' id='skill-section'>
         <span className='top-span'>WHAT I DO</span>
         <h2>Technologies I Work With</h2>
 
