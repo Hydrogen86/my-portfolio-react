@@ -10,7 +10,7 @@ const Projects = () => {
     const [currentIcon, setCurrentIcon] = useState(faArrowRightLong)
     const handleClick = () => {
         setShowAll(prev => !prev)
-        setCurrentIcon(prev => prev === currentIcon ? faArrowRightLong : faArrowLeftLong)
+        setCurrentIcon(prev => prev === faArrowRightLong ? faArrowLeftLong : faArrowRightLong)
     }
 
     const displayedProjects = showAll ? projects : projects.slice(0, 3);
@@ -26,7 +26,7 @@ const Projects = () => {
                 className="see-all-btn"
                 onClick={handleClick}
             >
-                {showAll ? "Show Less" : "View All Projects"} <FontAwesomeIcon icon={currentIcon}></FontAwesomeIcon>
+                {showAll ? "Show Less" : "View All Projects"} <FontAwesomeIcon icon={currentIcon}/>
             </button>
       </div>
 

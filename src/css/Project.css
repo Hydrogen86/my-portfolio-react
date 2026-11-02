@@ -13,7 +13,7 @@
 }
 
 .see-all-btn {
-    padding: .7rem 1.5rem;
+    padding: .7rem clamp(1rem, 2vw, 1.5rem);
     border: none;
     border-radius: 8px;
     background: var(--main-color);
@@ -52,27 +52,27 @@
 .project img {
     display: block;
     width: 100%;
-    height: 360px;
+    height: clamp(200px, 30vw, 360px);
     object-fit: cover;
     margin-bottom: 1rem;
     box-sizing: border-box;
 }
 
 .project .project-name {
-    font-size: 1.1rem;
+    font-size: clamp(.9rem, 1vw, 1.2rem);
     font-weight: 600;
 }
 .project-ds, .text-area {
     display: flex;
 }
 .text-area span:nth-child(2) {
-    font-size: .9rem;
+    font-size: clamp(.8rem, 1vw, 1rem);
 }
 .project-ds {
     justify-content: space-between;
     align-items: center;
     .icon {
-        font-size: 1.25rem;
+        font-size: clamp(1rem, 2vw, 1.25rem);
         color: var(--text-color);
         cursor: pointer;
         transition: .3s ease-in transform;
@@ -81,4 +81,10 @@
 }
 .project-ds .text-area {
     flex-direction: column;
+}
+
+@media (max-width: 770px) {
+    .project-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
