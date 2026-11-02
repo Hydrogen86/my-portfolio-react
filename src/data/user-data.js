@@ -54,7 +54,7 @@ const toolsAndPlatforms = [
 import swineGuardImg from '../assets/images/projects/swineguard.png'
 import pmbcsImg from '../assets/images/projects/pmbcs.png'
 import carabaoCartImg from '../assets/images/projects/carabaoCart.png'
-import bikezoneImg from '../assets/images/projects/BikeZone.png'
+import bikezoneImg from '../assets/images/projects/bikeZone.png'
 import animeTheaterImg from '../assets/images/projects/anime-theater.png'
 import ebudget from '../assets/images/projects/ebudget.png'
 const projects = [
