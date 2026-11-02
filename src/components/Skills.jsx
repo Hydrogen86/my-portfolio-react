@@ -15,7 +15,7 @@ const Skills = () => {
 
         <div className="skill-list__container">
 
-            <img src={images.aboutImage} alt="user-img" />
+            <img src={images.aboutImage} className="user-img" alt="user-img" />
 
             <div className="skill-section__right">
                 <div className="skill-nav-bar">

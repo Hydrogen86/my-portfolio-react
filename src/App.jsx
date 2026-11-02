@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Offer from './components/Offer'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About></About>
       <Offer></Offer>
       <Skills></Skills>
+      <Projects></Projects>
     </>
   )
 }

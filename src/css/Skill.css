@@ -24,7 +24,7 @@
     margin-top: 2rem;
 }
 
-.skill-section .skill-list__container img {
+.skill-section .skill-list__container .user-img {
     width: clamp(320px, 60vw, 500px);
     height: 100%;
     object-fit: contain;

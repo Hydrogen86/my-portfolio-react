@@ -50,31 +50,55 @@ const toolsAndPlatforms = [
     "Canva"
 ]
 
+
+import swineGuardImg from '../assets/images/swineguard.png'
+import pmbcsImg from '../assets/images/penroMarinduque.png'
+import carabaoCartImg from '../assets/images/carabaoCart.png'
+import bikezoneImg from '../assets/images/BikeZone.png'
+import animeTheaterImg from '../assets/images/anime-theater.png'
+import ebudget from '../assets/images/ebudget.png'
 const projects = [
     {
         projectName: "SwineGuard",
         about: "Web-based Health Monitoring and Vaccination Tracker System",
-        techStack: "HTML, JavaScript, NodeJS, ExpressJS, & MongoDB"
-    },
-    {
-        projectName: "CarabaoCart",
-        about: "Web-Based Carabao Milk Supply and Dairy Product Management System",
-        techStack: "PHP, JavaScript, & MySQL"
-    },
-    {
-        projectName: "BikeZone",
-        about: "Web-based Bike Supply and Product Management System",
-        techStack: "HTML, JavaScript, & XML"
+        techStack: "HTML, JavaScript, NodeJS, ExpressJS, & MongoDB",
+        development: "Web Developmet",
+        img: swineGuardImg
     },
     {
         projectName: "Penro MArinduque Billing Collection System",
         about: "Digital Billing Procedure of PENRO Marinduque",
-        techStack: "Laravel, JavaScript, & MySQL"
+        techStack: "Laravel, JavaScript, & MySQL",
+        development: "Web Developmet",
+        img: pmbcsImg
+    },
+    {
+        projectName: "CarabaoCart",
+        about: "Web-Based Carabao Milk Supply and Dairy Product Management System",
+        techStack: "PHP, JavaScript, & MySQL",
+        development: "Web Developmet",
+        img: carabaoCartImg
+    },
+    {
+        projectName: "BikeZone",
+        about: "Web-based Bike Supply and Product Management System",
+        techStack: "HTML, JavaScript, & XML",
+        development: "Web Developmet",
+        img: bikezoneImg
+    },
+    {
+        projectName: "E-budget",
+        about: "Mobile Application Budget Managing Application",
+        techStack: "Java",
+        development: "Mobile Developmet",
+        img: ebudget
     },
     {
         projectName: "Anime Theater",
         about: "Web-based Video Streaming Site",
-        techStack: "React, & NodeJS"
+        techStack: "React, & NodeJS",
+        development: "Web Developmet",
+        img: animeTheaterImg
     },
 ]
 
