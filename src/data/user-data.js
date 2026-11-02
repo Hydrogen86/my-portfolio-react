@@ -51,12 +51,12 @@ const toolsAndPlatforms = [
 ]
 
 
-import swineGuardImg from '../assets/images/swineguard.png'
-import pmbcsImg from '../assets/images/penroMarinduque.png'
-import carabaoCartImg from '../assets/images/carabaoCart.png'
-import bikezoneImg from '../assets/images/BikeZone.png'
-import animeTheaterImg from '../assets/images/anime-theater.png'
-import ebudget from '../assets/images/ebudget.png'
+import swineGuardImg from '../assets/images/projects/swineguard.png'
+import pmbcsImg from '../assets/images/projects/pmbcs.png'
+import carabaoCartImg from '../assets/images/projects/carabaoCart.png'
+import bikezoneImg from '../assets/images/projects/BikeZone.png'
+import animeTheaterImg from '../assets/images/projects/anime-theater.png'
+import ebudget from '../assets/images/projects/ebudget.png'
 const projects = [
     {
         projectName: "SwineGuard",

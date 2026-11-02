@@ -1,6 +1,84 @@
 @import url(../App.css);
 
 .project-section {
-    background-color: green;
     padding: 2rem;
+    color: var(--main-color);
+    background: linear-gradient(150deg, var(--pastel), var(--pastel), var(--gradient));
+}
+
+.project-container__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all-btn {
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: var(--pastel);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.see-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.project-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: var(--text-color);
+    padding: 1rem;
+    border:none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--main-color);
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.project .project-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.project-ds, .text-area {
+    display: flex;
+}
+.text-area span:nth-child(2) {
+    font-size: .9rem;
+}
+.project-ds {
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+        font-size: 1.25rem;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: .3s ease-in transform;
+    }
+    .icon:hover { transform: scale(1.1); color: var(--pastel); }
+}
+.project-ds .text-area {
+    flex-direction: column;
 }
