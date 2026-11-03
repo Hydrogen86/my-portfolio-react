@@ -73,6 +73,13 @@ const projects = [
         img: pmbcsImg
     },
     {
+        projectName: "Anime Theater",
+        about: "Web-based Video Streaming Site",
+        techStack: "React, & NodeJS",
+        development: "Web Developmet",
+        img: animeTheaterImg
+    },
+    {
         projectName: "CarabaoCart",
         about: "Web-Based Carabao Milk Supply and Dairy Product Management System",
         techStack: "PHP, JavaScript, & MySQL",
@@ -92,14 +99,7 @@ const projects = [
         techStack: "Java",
         development: "Mobile Developmet",
         img: ebudget
-    },
-    {
-        projectName: "Anime Theater",
-        about: "Web-based Video Streaming Site",
-        techStack: "React, & NodeJS",
-        development: "Web Developmet",
-        img: animeTheaterImg
-    },
+    }
 ]
 
 

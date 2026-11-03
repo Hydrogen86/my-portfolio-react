@@ -23,7 +23,6 @@ const Hero = () => {
                 <button>DOWNLOAD CV <FontAwesomeIcon icon={faArrowDown} /></button>
             </div>
         </div>
-
         <div className="right">
             <img src={images.heroImage} alt="developer-img" />
         </div>
