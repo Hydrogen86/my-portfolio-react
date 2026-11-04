@@ -2,6 +2,8 @@ import React from 'react'
 import { testimonials } from '../assets/image-icons'
 import '../css/Testimonial.css'
 import ScrollAnimation from './ScrollAnimation'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Testimonial = () => {
   return (
@@ -15,12 +17,27 @@ const Testimonial = () => {
         <div className="testimonial-container">
             {testimonials.map((client, index) => (
                 <ScrollAnimation className='zoom-in'>
-                    <div className="client" key={index}>
-                        <img src={client.image} alt={`client-${index}`} />
 
+                    <div className="client" key={index}>
                         <div className="message">
-                            <span>{ client.name }</span>
-                            <span>{ client.message }</span>
+                            <FontAwesomeIcon icon={faQuoteLeft} className='icon-qoute'></FontAwesomeIcon>
+                        <span className='message'> { client.message } </span>
+                        </div>
+
+                        <div className="client-info">
+                            <div className="client-info__inner">
+                                <img src={client.image} alt={`client-${index}`} />
+                                <div className="client-name">
+                                    <span>{ client.name }</span>
+                                    <span>{ client.position }</span>
+                                </div>
+                            </div>
+                            
+                            <div className="ratings">
+                                {Array.from({ length: parseInt(client.rating) }, (_, i) => (
+                                    <FontAwesomeIcon icon={faStar} className='ratings'></FontAwesomeIcon>
+                                ))}
+                            </div>
                         </div>
 
                     </div>

@@ -171,11 +171,15 @@ import clientTwo from './images/testimonials/client-2.png'
 const testimonials = [
     {
         name: "Marco",
+        position: "BSI/T Student",
+        rating: 5,
         message: "The project works well and meets the requirements. I also appreciate your cooperation and patience throughout the process.",
         image: clientOne
     },
     {
         name: "Lance Aron",
+        position: "BSI/T Student",
+        rating: 5,
         message: "The application is well-designed, user-friendly, and has very few errors. Thank you! I really appreciate your work.",
         image: clientTwo
     }

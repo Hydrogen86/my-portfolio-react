@@ -22,8 +22,8 @@
 }
 
 .testimonial-section img {
-    width: 85px;
-    height: 85px;
+    width: clamp(55px, 5vw, 85px);
+    height: clamp(55px, 5vw, 85px);
     border: 2px solid #8080806b;
     border-radius: 50%;
     object-fit: contain;
@@ -32,23 +32,48 @@
 .client {
     border-radius: 8px;
     max-width: 500px;
-    padding: .8rem;
-    display: flex;
-    gap: .8rem;
+    padding: 1rem;
     border: 1px solid #00000029;
     box-shadow: 0 4px 20px #00000029;
 }
 .client .message {
-    display: flex;
     text-align: left;
-    flex-direction: column;
     color: var(--text-muted);
 }
-
-.message span:nth-child(1) {
+.client .client-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: var(--text-muted);
+}
+.client-info__inner {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+}
+.client-name {
+    text-align: left;
+}
+.client-name span:nth-child(1) {
     font-family: var(--large-font);
     font-weight: 600;
     color: var(--pastel);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.client-name span:nth-child(2) {
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+
+.ratings,
+.icon-qoute {
+    color: var(--pastel);
+}
+.icon-qoute {
+    font-size: var(--text-sz-md);
 }
 
 @media (max-width: 770px) {
