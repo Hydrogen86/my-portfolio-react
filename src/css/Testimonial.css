@@ -48,7 +48,7 @@
 .message span:nth-child(1) {
     font-family: var(--large-font);
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--pastel);
 }
 
 @media (max-width: 770px) {
