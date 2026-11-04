@@ -1,0 +1,58 @@
+@import url(../App.css);
+
+.testimonial-section {
+    padding: 2rem 1rem;
+    text-align: center;
+
+    h1 {
+        color: var(--text-color);
+    }
+}
+
+.testimonial-section .span-heading {
+    color: var(--pastel);
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial-section img {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #8080806b;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.client {
+    border-radius: 8px;
+    max-width: 500px;
+    padding: .8rem;
+    display: flex;
+    gap: .8rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.client .message {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color: var(--text-muted);
+}
+
+.message span:nth-child(1) {
+    font-family: var(--large-font);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+@media (max-width: 770px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+}

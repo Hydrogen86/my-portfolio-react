@@ -4,17 +4,12 @@
     text-align: center; 
     margin-top: 3rem;
 
-    h2 {
-        font-family: var(--large-font);
-        font-size: 2rem;
-        font-weight: bolder;
-        color: var(--pastel);
+    h1 {
+        color: var(--text-color);
     }
-    .top-span {
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
+}
+.skill-section .span-heading {
+    color: var(--pastel);
 }
 .skill-list__container {
     display: flex;

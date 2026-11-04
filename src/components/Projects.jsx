@@ -20,7 +20,7 @@ const Projects = () => {
     <section className='project-section' id='project-section'>
         <div className="project-container__head">
             <div className="left">
-                <span>MY WORK</span>
+                <span className='span-heading'>MY WORK</span>
                 <h1>Featured Project</h1>
             </div>
             <button

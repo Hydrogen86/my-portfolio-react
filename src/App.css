@@ -39,6 +39,18 @@ section {
   padding: 0 1rem;
 }
 
+h1 {
+  font-family: var(--large-font);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.span-heading {
+  font-size: clamp(.8rem, 2vw, 1.1rem);
+  font-weight: 600;
+}
+
 html {
   scroll-behavior: smooth;
 }
+

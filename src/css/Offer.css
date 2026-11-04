@@ -7,15 +7,6 @@
     background: linear-gradient(150deg, var(--pastel), var(--pastel), var(--gradient));
     text-align: center;
     color: var(--main-color);
-
-    h1 {
-        font-family: var(--large-font);
-        font-weight: bolder;
-        font-size: clamp(1.4rem, 5vw, 2.5rem);
-    }
-}
-.top-txt {
-    font-size: clamp(.8rem, 2vw, 1.1rem);
 }
 
 .offer-container {

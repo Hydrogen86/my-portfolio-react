@@ -66,7 +66,7 @@ const projects = [
         img: swineGuardImg
     },
     {
-        projectName: "Penro MArinduque Billing Collection System",
+        projectName: "Penro Marinduque Billing Collection System",
         about: "Digital Billing Procedure of PENRO Marinduque",
         techStack: "Laravel, JavaScript, & MySQL",
         development: "Web Developmet",

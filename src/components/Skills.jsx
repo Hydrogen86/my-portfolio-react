@@ -10,8 +10,8 @@ const Skills = () => {
 
   return (
     <section className='skill-section' id='skill-section'>
-        <span className='top-span'>WHAT I DO</span>
-        <h2>Technologies I Work With</h2>
+        <span className='span-heading'>WHAT I DO</span>
+        <h1>Technologies I Work With</h1>
 
         <div className="skill-list__container">
 

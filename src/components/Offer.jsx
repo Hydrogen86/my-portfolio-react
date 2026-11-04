@@ -9,7 +9,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons'
 const Offer = () => {
   return (
     <section className='offer-section' id='offer-section'>
-        <span className='top-txt'>CORE SERVICES</span>
+        <span className='span-heading'>CORE SERVICES</span>
         <h1>What I can Help You With</h1>
 
         <div className="offer-container">

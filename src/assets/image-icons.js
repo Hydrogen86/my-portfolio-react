@@ -163,6 +163,24 @@ const images = {
     aboutImage: aboutImg
 }
 
+//-----------------------------------
+//----------TESTIMONIALS-------------
+//-----------------------------------
+import clientOne from './images/testimonials/client-1.png'
+import clientTwo from './images/testimonials/client-2.png'
+const testimonials = [
+    {
+        name: "Marco",
+        message: "The project are working well and do what instruction did I also like your cooperationa nd patience",
+        image: clientOne
+    },
+    {
+        name: "Lance Aron",
+        message: "The application are well designed and minimal errors thank you I really like it",
+        image: clientTwo
+    }
+]
+
 
 export {
     icons,
@@ -170,5 +188,6 @@ export {
     programLanguage,
     toolsAndPlatforms,
     frameworksAndLabraries,
-    databaseManagement
+    databaseManagement,
+    testimonials
 }
