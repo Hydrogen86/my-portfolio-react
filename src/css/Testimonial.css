@@ -35,8 +35,8 @@
     padding: .8rem;
     display: flex;
     gap: .8rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #00000029;
+    box-shadow: 0 4px 20px #00000029;
 }
 .client .message {
     display: flex;

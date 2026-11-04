@@ -4,10 +4,13 @@ import { userData, projects } from '../data/user-data.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faDiagramProject, faTrophy, faSmile, faUser } from '@fortawesome/free-solid-svg-icons'
 import '../css/About.css'
+import ScrollAnimation from './ScrollAnimation.jsx'
 
 const About = () => {
   return (
     <section className='about-section' id='about-section'>
+
+        <ScrollAnimation className='fade-up'>
         <div className="about__right-side">
 
             <div className="card">
@@ -40,7 +43,9 @@ const About = () => {
             </div>
 
         </div>
+        </ScrollAnimation>
 
+        <ScrollAnimation className='zoom-in'>
         <div className="about__left-side">
             <span>ABOUT ME</span>
             <span>
@@ -58,6 +63,7 @@ const About = () => {
                 <FontAwesomeIcon src={faUser}></FontAwesomeIcon>
             </button>
         </div>
+        </ScrollAnimation>
     </section>
   )
 }

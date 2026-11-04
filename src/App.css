@@ -37,6 +37,7 @@ body {
 
 section {
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 h1 {

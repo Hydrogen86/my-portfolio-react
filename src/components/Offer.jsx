@@ -5,15 +5,19 @@ import { faCode } from '@fortawesome/free-solid-svg-icons/faCode'
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons/faMobileAlt'
 import { faFigma } from '@fortawesome/free-brands-svg-icons/faFigma'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
+import ScrollAnimation from './ScrollAnimation'
 
 const Offer = () => {
   return (
     <section className='offer-section' id='offer-section'>
-        <span className='span-heading'>CORE SERVICES</span>
-        <h1>What I can Help You With</h1>
+        <ScrollAnimation className='fade-up'>
+            <span className='span-heading'>CORE SERVICES</span>
+            <h1>What I can Help You With</h1>
+        </ScrollAnimation>
 
         <div className="offer-container">
 
+            <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
                 <FontAwesomeIcon icon={faReact} className='icon'></FontAwesomeIcon>
 
@@ -22,6 +26,9 @@ const Offer = () => {
                     I develop modern web interfaces using clean, maintainable code and contemporary frontend technologies, focusing on performance, accessibility, and responsiveness.
                 </p>
             </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
                 <FontAwesomeIcon icon={faCode} className='icon'></FontAwesomeIcon>
 
@@ -30,7 +37,9 @@ const Offer = () => {
                     I build scalable backend systems using modern technologies, focusing on secure data management, efficient APIs, and reliable application performance.
                 </p>
             </div>
+            </ScrollAnimation>
 
+            <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
                 <FontAwesomeIcon icon={faMobileAlt} className='icon'></FontAwesomeIcon>
 
@@ -39,7 +48,9 @@ const Offer = () => {
                 I focus on creating user-friendly mobile experiences with clean designs, smooth functionality, and modern development practices.
                 </p>
             </div>
+            </ScrollAnimation>
             
+            <ScrollAnimation className='zoom-in'>
             <div className="offer-card">
                 <FontAwesomeIcon icon={faFigma} className='icon'></FontAwesomeIcon>
 
@@ -48,7 +59,8 @@ const Offer = () => {
                 I create clean and engaging designs that balance visual appeal with usability, making digital experiences simple, enjoyable, and accessible.
                 </p>
             </div>
-
+            </ScrollAnimation>
+            
         </div>
         
     </section>

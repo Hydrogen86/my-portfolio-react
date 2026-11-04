@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { images, programLanguage, frameworksAndLabraries, databaseManagement, toolsAndPlatforms } from '../assets/image-icons.js'
 import '../css/Skill.css'
+import ScrollAnimation from './ScrollAnimation.jsx'
 
 const Skills = () => {
     
@@ -10,11 +11,13 @@ const Skills = () => {
 
   return (
     <section className='skill-section' id='skill-section'>
-        <span className='span-heading'>WHAT I DO</span>
-        <h1>Technologies I Work With</h1>
+        <ScrollAnimation className='fade-up'>
+            <span className='span-heading'>WHAT I DO</span>
+            <h1>Technologies I Work With</h1>
+        </ScrollAnimation>
 
+        <ScrollAnimation className='zoom-in'>
         <div className="skill-list__container">
-
             <img src={images.aboutImage} className="user-img" alt="user-img" />
 
             <div className="skill-section__right">
@@ -47,6 +50,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+        </ScrollAnimation>
     </section>
   )
 }

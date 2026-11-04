@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faArrowLeftLong, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import '../css/Project.css'
 import ShowAlert from './ShowAlert'
+import ScrollAnimation from './ScrollAnimation'
 
 const Projects = () => {
 
@@ -19,32 +20,41 @@ const Projects = () => {
   return (
     <section className='project-section' id='project-section'>
         <div className="project-container__head">
+
+            <ScrollAnimation className='fade-up'>
             <div className="left">
                 <span className='span-heading'>MY WORK</span>
                 <h1>Featured Project</h1>
             </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation className='slide-right'>
             <button
                 className="see-all-btn"
                 onClick={handleClick}
             >
                 {showAll ? "Show Less" : "View All Projects"} <FontAwesomeIcon icon={currentIcon}/>
             </button>
+            </ScrollAnimation>
       </div>
 
       <div className="project-container">
 
         {displayedProjects.map((project, index) => (
-            <div className="project" key={index} onClick={() => ShowAlert("Sucess", "The Project has been clicked.", "success")}>
-                <img src={project.img} alt="project-img" />
-                <div className="project-ds">
-                    <div className="text-area">
-                        <span className='project-name'>{project.projectName}</span>
-                        <span>{project.development}</span>
+            <ScrollAnimation className='zoom-in'>
+                <div className="project" key={index} onClick={() => ShowAlert("Sucess", "The Project has been clicked.", "success")}>
+                    <img src={project.img} alt="project-img" />
+                    
+                    <div className="project-ds">
+                        <div className="text-area">
+                            <span className='project-name'>{project.projectName}</span>
+                            <span>{project.development}</span>
+                        </div>
+                        <FontAwesomeIcon className='icon' icon={faArrowUpRightFromSquare}/>
                     </div>
-                    <FontAwesomeIcon className='icon' icon={faArrowUpRightFromSquare}/>
+                    
                 </div>
-                
-            </div>
+            </ScrollAnimation>
         ))}
     
       </div>
