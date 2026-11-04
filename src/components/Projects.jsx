@@ -3,6 +3,7 @@ import { projects } from '../data/user-data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faArrowLeftLong, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import '../css/Project.css'
+import ShowAlert from './ShowAlert'
 
 const Projects = () => {
 
@@ -33,7 +34,7 @@ const Projects = () => {
       <div className="project-container">
 
         {displayedProjects.map((project, index) => (
-            <div className="project" key={index}>
+            <div className="project" key={index} onClick={() => ShowAlert("Sucess", "The Project has been clicked.", "success")}>
                 <img src={project.img} alt="project-img" />
                 <div className="project-ds">
                     <div className="text-area">

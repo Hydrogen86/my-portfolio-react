@@ -41,21 +41,28 @@
     flex-direction: column;
     min-width: 0;
     color: var(--text-color);
-    padding: 1rem;
     border:none;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--main-color);
+
+    cursor: pointer;
+}
+.project:hover {
+    .project-ds .icon { transform: scale(1.1); color: var(--pastel); }
 }
 
 .project img {
     display: block;
     width: 100%;
-    height: clamp(200px, 30vw, 360px);
+    height: clamp(220px, 40vw, 380px);
     object-fit: cover;
-    margin-bottom: 1rem;
     box-sizing: border-box;
+    transition: transform .5s ease;
+}
+.project img:hover {
+    transform: scale(1.1);
 }
 
 .project .project-name {
@@ -64,6 +71,10 @@
 }
 .project-ds, .text-area {
     display: flex;
+    padding: .5rem;
+    z-index: 999;
+    max-height: 200px;
+    background-color: var(--main-color);
 }
 .text-area span:nth-child(2) {
     font-size: clamp(.8rem, 1vw, 1rem);
@@ -77,12 +88,18 @@
         cursor: pointer;
         transition: .3s ease-in transform;
     }
-    .icon:hover { transform: scale(1.1); color: var(--pastel); }
 }
+
+
 .project-ds .text-area {
     flex-direction: column;
 }
 
+@media (max-width: 1250px) {
+    .project-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 @media (max-width: 770px) {
     .project-container {
         grid-template-columns: repeat(1, minmax(0, 1fr));
