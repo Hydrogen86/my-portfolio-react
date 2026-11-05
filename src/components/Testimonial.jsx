@@ -10,8 +10,8 @@ const Testimonial = () => {
     <section className='testimonial-section'>
         <ScrollAnimation className='fade-up'>
             <div className="header">
-                <span className='span-heading'>WHAT CLIENT SAY</span>
-                <h1>Testimonials</h1>
+                <span className='span-heading'>TESTIMONIALS</span>
+                <h1>What Clients Say About My Work</h1>
             </div>
         </ScrollAnimation>
         <div className="testimonial-container">
@@ -21,7 +21,7 @@ const Testimonial = () => {
                     <div className="client" key={index}>
                         <div className="message">
                             <FontAwesomeIcon icon={faQuoteLeft} className='icon-qoute'></FontAwesomeIcon>
-                        <span className='message'> { client.message } </span>
+                            <span className='message'> { client.message } </span>
                         </div>
 
                         <div className="client-info">

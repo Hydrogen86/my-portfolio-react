@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <section className='skill-section' id='skill-section'>
         <ScrollAnimation className='fade-up'>
-            <span className='span-heading'>WHAT I DO</span>
+            <span className='span-heading'>TECH STACK & SKILLS</span>
             <h1>Technologies I Work With</h1>
         </ScrollAnimation>
 
