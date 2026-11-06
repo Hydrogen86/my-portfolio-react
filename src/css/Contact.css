@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     gap: clamp(1rem, 2vw, 5rem);
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.08);
     padding: 0;
     background-image: url('../assets//images/desk-1.jpg');
     background-position: center;
@@ -20,7 +19,7 @@
 
 .contact-section__txt-area {
     color: var(--main-color);
-    z-index: 1000;
+    z-index: 999;
     max-width: 500px;
     .span-heading {
         color: var(--gradient);
@@ -155,5 +154,5 @@
 }
 
 .fade-up {
-    z-index: 1000;
+    z-index: 999;
 }

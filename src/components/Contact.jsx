@@ -4,7 +4,7 @@ import ScrollAnimation from './ScrollAnimation'
 
 const Contact = () => {
   return (
-    <section className='contact-section'>
+    <section className='contact-section' id='contact-section'>
       <ScrollAnimation className='fade-up'>
         <div className="contact-section__txt-area container">
           <span className='span-heading'>LET'S WORK TOGETHER</span>

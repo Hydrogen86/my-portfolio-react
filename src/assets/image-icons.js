@@ -10,13 +10,16 @@ import whatsApp from './icons/whatsapp.png'
 import tiktok from './icons/tiktok.png'
 const icons = {
     exit,
-    menu,
+    menu
+}
+
+const socialIcons = [
     facebook,
     instagram,
     linkedIn,
     whatsApp,
     tiktok
-}
+]
 
 //-----------------------------------
 //------PROGRAMMING LANGUAGES--------
@@ -188,6 +191,7 @@ const testimonials = [
 
 export {
     icons,
+    socialIcons,
     images,
     programLanguage,
     toolsAndPlatforms,

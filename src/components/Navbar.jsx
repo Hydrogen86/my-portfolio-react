@@ -41,7 +41,7 @@ const Navbar = () => {
           <li><a href="#offer-section" onClick={closeMenu}>Services</a></li>
           <li><a href="#skill-section" onClick={closeMenu}>Skills</a></li>
           <li><a href="#project-section" onClick={closeMenu}>Projects</a></li>
-          <li><a href="#" onClick={closeMenu}>Contact</a></li>
+          <li><a href="#contact-section" onClick={closeMenu}>Contact</a></li>
 
           <button onClick={() => ShowAlert("In Progress", "The owner still on developing his personal Portfolio", "warning")}>LET'S WORK TOGETHER</button>
         </ul>
