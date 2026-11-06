@@ -11,6 +11,7 @@ const Footer = () => {
           <span>
             Designing and developing digital experiences that make an impact.
           </span>
+          <span>{ userData.email }</span>
         </div>
         
 
