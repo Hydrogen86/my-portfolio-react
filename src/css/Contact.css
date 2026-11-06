@@ -51,7 +51,7 @@
 }
 
 .contact-section form {
-    width: clamp(350px, 80vw, 500px);
+    width: clamp(330px, 80vw, 500px);
     padding: 2rem 1.5rem;
     z-index: 2;
     position: relative;
