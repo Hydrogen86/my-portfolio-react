@@ -15,6 +15,19 @@ const Projects = () => {
         setCurrentIcon(prev => prev === faArrowRightLong ? faArrowLeftLong : faArrowRightLong)
     }
 
+    const handleUrl = (pageURL) => {
+        if (!pageURL || pageURL.trim() === "") {
+            ShowAlert(
+                "Sorry!",
+                "This project is currently unavailable or its link has not been published yet.",
+                "info"
+            );
+            return;
+        }
+
+        window.open(pageURL, "_blank", "noopener,noreferrer");
+    };
+
     const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
@@ -42,7 +55,8 @@ const Projects = () => {
 
         {displayedProjects.map((project, index) => (
             <ScrollAnimation className='zoom-in'>
-                <div className="project" key={index} onClick={() => ShowAlert("Sucess", "The Project has been clicked.", "success")}>
+                <div className="project" key={index} onClick={() => handleUrl(project.url)}>
+                    
                     <img src={project.img} alt="project-img" />
                     
                     <div className="project-ds">

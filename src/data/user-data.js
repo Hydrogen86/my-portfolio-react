@@ -63,42 +63,48 @@ const projects = [
         about: "Web-based Health Monitoring and Vaccination Tracker System",
         techStack: "HTML, JavaScript, NodeJS, ExpressJS, & MongoDB",
         development: "Web Developmet",
-        img: swineGuardImg
+        img: swineGuardImg,
+        url: "https://swineguard-landing-page-react.vercel.app/"
     },
     {
         projectName: "Penro Marinduque Billing Collection System",
         about: "Digital Billing Procedure of PENRO Marinduque",
         techStack: "Laravel, JavaScript, & MySQL",
         development: "Web Developmet",
-        img: pmbcsImg
+        img: pmbcsImg,
+        url: "https://pmbcs.penromarinduque.gov.ph/login"
     },
     {
         projectName: "Anime Theater",
         about: "Web-based Video Streaming Site",
         techStack: "React, & NodeJS",
         development: "Web Developmet",
-        img: animeTheaterImg
+        img: animeTheaterImg,
+        url: "https://anime-free-theater.vercel.app/"
     },
     {
         projectName: "CarabaoCart",
         about: "Web-Based Carabao Milk Supply and Dairy Product Management System",
         techStack: "PHP, JavaScript, & MySQL",
         development: "Web Developmet",
-        img: carabaoCartImg
+        img: carabaoCartImg,
+        url: ""
     },
     {
         projectName: "BikeZone",
         about: "Web-based Bike Supply and Product Management System",
         techStack: "HTML, JavaScript, & XML",
         development: "Web Developmet",
-        img: bikezoneImg
+        img: bikezoneImg,
+        url: ""
     },
     {
         projectName: "E-budget",
         about: "Mobile Application Budget Managing Application",
         techStack: "Java",
         development: "Mobile Developmet",
-        img: ebudget
+        img: ebudget,
+        url: ""
     }
 ]
 
