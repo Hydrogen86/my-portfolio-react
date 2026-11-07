@@ -141,7 +141,7 @@ nav button:hover {
         display: block;
     }
 
-    header nav ul li a {
+    header nav ul li a.nav-link {
         color: var(--text-color);
     }
 

@@ -47,7 +47,7 @@ const About = () => {
 
         <ScrollAnimation className='zoom-in'>
         <div className="about__left-side">
-            <span>ABOUT ME</span>
+            <span className='span-heading'>ABOUT ME</span>
             <span>
                 I am passionate about creating digital solutions
             </span>
