@@ -30,7 +30,7 @@ header.scrolled {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-header.scrolled a {
+header.scrolled a.nav-link {
     color: var(--text-color);
 }
 
@@ -58,7 +58,7 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li a {
+nav ul li a.nav-link {
     text-decoration: none;
     font-family: var(----large-font);
     font-size: clamp(1rem, 2vw, 1.1rem);
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 /* Animated underline */
-ul a::after {
+ul a.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -89,12 +89,12 @@ ul a::after {
 }
 
 /* Animate from left to right */
-ul a:hover::after {
+ul a.nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-ul a:hover {
+ul a.nav-link:hover {
   color: var(--highlights);
 }
 
@@ -108,7 +108,12 @@ nav button {
     font-family: var(--main-font);
     cursor: pointer;
     transition: .3s ease-in;
-    font-weight: bolder;
+
+    a { 
+        text-decoration: none;
+        color: var(--main-color);
+        font-weight: bolder;
+    }
 }
 
 nav button:hover {

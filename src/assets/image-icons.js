@@ -8,17 +8,38 @@ import instagram from './icons/instagram.png'
 import linkedIn from './icons/linkedIn.png'
 import whatsApp from './icons/whatsapp.png'
 import tiktok from './icons/tiktok.png'
+import gmail from './icons/gmail.png'
 const icons = {
     exit,
     menu
 }
 
 const socialIcons = [
-    facebook,
-    instagram,
-    linkedIn,
-    whatsApp,
-    tiktok
+    {
+        name: "Facebook",
+        url: "https://www.facebook.com/share/1CHhyNtkzA/",
+        icon: facebook
+    },
+    {
+        name: "Gmail",
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=magno.robert.m@gmail.com&su=Portfolio%20Inquiry",
+        icon: gmail
+    },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/robert-magno-8b038040b/",
+        icon: linkedIn
+    },
+    {
+        name: "WhatsApp",
+        url: "https://wa.me/639266495922",
+        icon: whatsApp
+    },
+    {
+        name: "TikTok",
+        url: "https://tiktok.com/@randomitdude",
+        icon: tiktok
+    }
 ]
 
 //-----------------------------------

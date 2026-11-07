@@ -1,9 +1,24 @@
 import React from 'react'
 import { socialIcons } from '../assets/image-icons'
 import { userData } from '../data/user-data'
+import ShowAlert from './ShowAlert'
 import '../css/Footer.css'
 
 const Footer = () => {
+
+  const handleUrl = (pageURL, iconName) => {
+    if (!pageURL || pageURL.trim() === "") {
+      ShowAlert(
+        "Sorry!",
+        `The developer's ${iconName} link is currently unavailable or has not been updated.`,
+        "info"
+      );
+      return;
+    }
+
+    window.open(pageURL, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <footer>
         <div className="dev-name">
@@ -29,7 +44,7 @@ const Footer = () => {
           <h3>LET'S CONNECT</h3>
           <div className="icons">
             { socialIcons.map((icon, index) => (
-              <img src={icon} alt={"icon-" + index} key={index}/>
+              <img src={icon.icon} alt={icon.name + "-icon"} key={index}  onClick={() => handleUrl(icon.url, icon.name)}/>
             )) }
           </div>
         </div>

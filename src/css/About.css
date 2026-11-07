@@ -79,8 +79,13 @@ RIGHT SIDE
     background-color: var(--pastel);
     color: var(--main-color);
     cursor: pointer;
-    font-weight: bold;
-    font-family: var(--large-font);
+
+    a { 
+        text-decoration: none;
+        color: var(--main-color);
+        font-weight: bold;
+        font-family: var(--large-font);
+    }
 }
 
 @media (max-width: 750px) {

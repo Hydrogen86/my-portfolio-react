@@ -59,8 +59,7 @@ const About = () => {
                 intuitive, and tailored to each project's needs.
             </span>
             <button>
-                LEARN MORE ABOUT ME
-                <FontAwesomeIcon src={faUser}></FontAwesomeIcon>
+                <a href="#contact-section">LET'S WORK TOGETHER</a>
             </button>
         </div>
         </ScrollAnimation>

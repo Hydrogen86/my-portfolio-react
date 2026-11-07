@@ -16,9 +16,9 @@ const Testimonial = () => {
         </ScrollAnimation>
         <div className="testimonial-container">
             {testimonials.map((client, index) => (
-                <ScrollAnimation className='zoom-in'>
+                <ScrollAnimation className='zoom-in' key={index}>
 
-                    <div className="client" key={index}>
+                    <div className="client">
                         <div className="message">
                             <FontAwesomeIcon icon={faQuoteLeft} className='icon-qoute'></FontAwesomeIcon>
                             <span className='message'> { client.message } </span>
@@ -35,7 +35,7 @@ const Testimonial = () => {
                             
                             <div className="ratings">
                                 {Array.from({ length: parseInt(client.rating) }, (_, i) => (
-                                    <FontAwesomeIcon icon={faStar} className='ratings'></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faStar} className='ratings' key={`${client.name}-star-${i}`}></FontAwesomeIcon>
                                 ))}
                             </div>
                         </div>

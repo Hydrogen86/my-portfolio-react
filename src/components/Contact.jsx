@@ -20,21 +20,21 @@ const Contact = () => {
         <div className="container">
           <form>
             <h1>Contact Form</h1>
-            <div class="input-group">
+            <div className="input-group">
               <input type="text" id="fullName" placeholder=" " required />
-              <label for="fullName">Full Name</label>
+              <label htmlFor="fullName">Full Name</label>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <input type="email" id="email" placeholder=" " required />
-              <label for="email">Email Address</label>
+              <label htmlFor="email">Email Address</label>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <input type="text" id="subject" placeholder=" " required />
-              <label for="subject">Subject</label>
+              <label htmlFor="subject">Subject</label>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <textarea type="text" id="message" placeholder=" " required />
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
             </div>
 
             <button>Send Message</button>

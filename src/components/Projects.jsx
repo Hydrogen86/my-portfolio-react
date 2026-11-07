@@ -54,8 +54,8 @@ const Projects = () => {
       <div className="project-container">
 
         {displayedProjects.map((project, index) => (
-            <ScrollAnimation className='zoom-in'>
-                <div className="project" key={index} onClick={() => handleUrl(project.url)}>
+            <ScrollAnimation className='zoom-in'  key={index} >
+                <div className="project"onClick={() => handleUrl(project.url)}>
                     
                     <img src={project.img} alt="project-img" />
                     

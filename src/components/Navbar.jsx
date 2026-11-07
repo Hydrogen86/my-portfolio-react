@@ -36,14 +36,14 @@ const Navbar = () => {
 
       <nav className={ isMenuOpen ? "nav-open" : "" }>
         <ul>
-          <li><a href="#hero-section" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about-section" onClick={closeMenu}>About</a></li>
-          <li><a href="#offer-section" onClick={closeMenu}>Services</a></li>
-          <li><a href="#skill-section" onClick={closeMenu}>Skills</a></li>
-          <li><a href="#project-section" onClick={closeMenu}>Projects</a></li>
-          <li><a href="#contact-section" onClick={closeMenu}>Contact</a></li>
+          <li><a href="#hero-section" className='nav-link' onClick={closeMenu}>Home</a></li>
+          <li><a href="#about-section" className='nav-link' onClick={closeMenu}>About</a></li>
+          <li><a href="#offer-section" className='nav-link' onClick={closeMenu}>Services</a></li>
+          <li><a href="#skill-section" className='nav-link' onClick={closeMenu}>Skills</a></li>
+          <li><a href="#project-section" className='nav-link' onClick={closeMenu}>Projects</a></li>
+          <li><a href="#contact-section" className='nav-link' onClick={closeMenu}>Contact</a></li>
 
-          <button onClick={() => ShowAlert("In Progress", "The owner still on developing his personal Portfolio", "warning")}>LET'S WORK TOGETHER</button>
+          <button><a href="#contact-section">LET'S WORK TOGETHER</a></button>
         </ul>
       </nav>
 
