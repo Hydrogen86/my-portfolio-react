@@ -19,7 +19,7 @@ const Hero = () => {
                 <p>I designs and builds modern, responsive, and user-friendly web experiences that help businesses grow and connect with their audience.</p>
             </div>
             <div className="hero__btn">
-                <button><a href="#project-section">VIEW MY PROJECTS</a> <FontAwesomeIcon icon={faArrowRightLong} /></button>
+                <button><a href="#project-section">View My Projects</a> <FontAwesomeIcon icon={faArrowRightLong} /></button>
                 <button>
                     <a href="../../public/ROBERT MAGNO - Resume.pdf" download="../../public/ROBERT MAGNO - Resume.pdf">
                         View My Resume
