@@ -13,6 +13,11 @@
     background-size: cover;
 
     position: relative;
+
+    a { 
+        text-decoration: none;
+        color: var(--main-color);
+        font-weight: bold;    }
 }
 
 .hero-section .left {
