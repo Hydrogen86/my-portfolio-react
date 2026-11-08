@@ -111,25 +111,8 @@
     gap: 1rem;
 }
 
-.left .hero__btn button {
-    width: 100%;
-    padding: .8rem 0;
-    border: clamp(1px, 1vw, 2px) solid #ffffffb3;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    backdrop-filter: blur(30px);
-    background-color: #ffffff09;
-    color: var(--main-color);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(.5rem, 1vw, 1rem);
-    font-size: clamp(.7rem, 2vw, 1rem);
-}
-
-.left .hero__btn button:nth-child(1) {
+.left .hero__btn a:nth-child(1) {
     background-color: var(--pastel);
     color: var(--main-color);
     border: clamp(1px, 1vw, 2px) solid var(--pastel);
@@ -140,10 +123,6 @@
     height: 100%;
     object-fit: contain;
 }
-
-
-
-
 
 @media (max-width: 770px) {
     .hero-section {

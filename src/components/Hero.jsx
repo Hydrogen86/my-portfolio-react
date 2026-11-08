@@ -3,6 +3,7 @@ import { userData } from '../data/user-data.js'
 import { images, icons } from '../assets/image-icons.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import Button from './Button.jsx'
 import '../css/Hero.css'
 
 const Hero = () => {
@@ -18,15 +19,23 @@ const Hero = () => {
             <div className="description">
                 <p>I designs and builds modern, responsive, and user-friendly web experiences that help businesses grow and connect with their audience.</p>
             </div>
+
             <div className="hero__btn">
-                <button><a href="#project-section">View My Projects</a> <FontAwesomeIcon icon={faArrowRightLong} /></button>
-                <button>
-                    <a href="../../public/ROBERT MAGNO - Resume.pdf" download="../../public/ROBERT MAGNO - Resume.pdf">
-                        View My Resume
-                    </a>
-                    <FontAwesomeIcon icon={faArrowDown} />
-                </button>
+
+                <Button
+                    hRef="#project-section"
+                    textContent="View My Projects"
+                    icon={faArrowRightLong}
+                />
+                <Button
+                    hRef="/ROBERT%20MAGNO%20-%20Resume.pdf"
+                    target="_blank"
+                    textContent="View My Resume"
+                    icon={faArrowDown}
+                />
+
             </div>
+
         </div>
         <div className="right">
             <img src={images.heroImage} alt="developer-img" />

@@ -1,6 +1,7 @@
 import React from 'react'
 import { images, icons } from '../assets/image-icons.js'
 import { userData, projects } from '../data/user-data.js'
+import { testimonials } from '../assets/image-icons.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faDiagramProject, faTrophy, faSmile, faUser } from '@fortawesome/free-solid-svg-icons'
 import '../css/About.css'
@@ -37,7 +38,7 @@ const About = () => {
             <div className="card">
                 <FontAwesomeIcon icon={faSmile} />
                 <div className="txt-area">
-                    <span>10+</span>
+                    <span>{ testimonials.length + 1 + "+" }</span>
                     <span>Happy Client</span>
                 </div>
             </div>
