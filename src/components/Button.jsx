@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import '../css/Button.css'
 
-const Button = ({ className, hRef, textContent, downloadLink, icon, target }) => {
+const Button = ({ className, hRef, textContent, downloadLink, icon, target, onclick }) => {
 
   return (
     <a
@@ -11,6 +11,7 @@ const Button = ({ className, hRef, textContent, downloadLink, icon, target }) =>
         download={downloadLink || undefined}
         target={target || undefined}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        onClick={onclick || undefined}
     >
         {textContent}
         {icon && <FontAwesomeIcon className='icon' icon={icon} />}

@@ -43,6 +43,13 @@ header.scrolled a.nav-link {
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 ul {
     gap: clamp(1rem, 2vw, 5rem);
 }
@@ -97,9 +104,12 @@ ul a.nav-link:hover::after {
 ul a.nav-link:hover {
   color: var(--highlights);
 }
-
+.navBar_button-inside {
+    display: none;
+}
 /* Let's Work Together Button */
-.navBar_button {
+.navBar_button,
+.navBar_button-inside {
     color: var(--main-color);
     max-width: 300px;
     background-color: var(--pastel);
@@ -126,6 +136,12 @@ ul a.nav-link:hover {
 
 
 @media (max-width: 770px) {
+    .navBar_button {
+        display: none;
+    }
+    .navBar_button-inside {
+        display: inline-flex;
+    }
     .icon__header {
         display: block;
     }

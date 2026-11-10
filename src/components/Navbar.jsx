@@ -44,6 +44,13 @@ const Navbar = () => {
           <li><a href="#project-section" className='nav-link' onClick={closeMenu}>Projects</a></li>
           <li><a href="#contact-section" className='nav-link' onClick={closeMenu}>Contact</a></li>
         </ul>
+        <Button
+          className="navBar_button-inside"
+          hRef="#contact-section"
+          textContent="LET'S WORK TOGETHER"
+          icon={faHandshake}
+          onclick={closeMenu}
+        />
       </nav>
 
       <Button
