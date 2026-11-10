@@ -13,7 +13,7 @@ const Button = ({ className, hRef, textContent, downloadLink, icon, target }) =>
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
     >
         {textContent}
-        {icon && <FontAwesomeIcon icon={icon} />}
+        {icon && <FontAwesomeIcon className='icon' icon={icon} />}
     </a>
   )
 }

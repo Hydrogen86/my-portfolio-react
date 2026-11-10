@@ -99,25 +99,14 @@ ul a.nav-link:hover {
 }
 
 /* Let's Work Together Button */
-nav button {
-    padding: .5rem 1rem;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--pastel);
+.navBar_button {
     color: var(--main-color);
-    font-family: var(--main-font);
-    cursor: pointer;
-    transition: .3s ease-in;
-
-    a { 
-        text-decoration: none;
-        color: var(--main-color);
-        font-weight: bolder;
-    }
-}
-
-nav button:hover {
-    background-color: var(--highlights);
+    max-width: 300px;
+    background-color: var(--pastel);
+    font-weight: 600; 
+    font-family: var(--large-font);
+    border-radius: 100px;
+    padding: .5rem 0;
 }
 
 

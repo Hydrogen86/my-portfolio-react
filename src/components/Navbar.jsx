@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react'
 import { userData } from '../data/user-data.js'
 import { icons } from '../assets/image-icons.js'
-import ShowAlert from './ShowAlert.jsx'
+import Button from './Button.jsx'
+import { faHandshake } from '@fortawesome/free-solid-svg-icons'
 import '../css/NavBar.css'
 
 const Navbar = () => {
@@ -42,11 +43,15 @@ const Navbar = () => {
           <li><a href="#skill-section" className='nav-link' onClick={closeMenu}>Skills</a></li>
           <li><a href="#project-section" className='nav-link' onClick={closeMenu}>Projects</a></li>
           <li><a href="#contact-section" className='nav-link' onClick={closeMenu}>Contact</a></li>
-
-          <button><a href="#contact-section">LET'S WORK TOGETHER</a></button>
         </ul>
       </nav>
 
+      <Button
+        className="navBar_button"
+        hRef="#contact-section"
+        textContent="LET'S WORK TOGETHER"
+        icon={faHandshake}
+      />
 
       <button 
         className='icon__header'
