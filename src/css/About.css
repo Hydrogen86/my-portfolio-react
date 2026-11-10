@@ -73,20 +73,11 @@ RIGHT SIDE
     line-height: 1.5rem;
 }
 
-.about__left-side button {
-    padding: .5rem;
-    border-radius: 8px;
-    border: none;
+.about-me_button {
     background-color: var(--pastel);
     color: var(--main-color);
-    cursor: pointer;
-
-    a { 
-        text-decoration: none;
-        color: var(--main-color);
-        font-weight: bold;
-        font-family: var(--large-font);
-    }
+    font-family: var(--large-font);
+    font-weight: 600;
 }
 
 @media (max-width: 750px) {

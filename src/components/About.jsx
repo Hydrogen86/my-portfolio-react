@@ -3,9 +3,10 @@ import { images, icons } from '../assets/image-icons.js'
 import { userData, projects } from '../data/user-data.js'
 import { testimonials } from '../assets/image-icons.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar, faDiagramProject, faTrophy, faSmile, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faDiagramProject, faTrophy, faSmile, faUser, faHandshake } from '@fortawesome/free-solid-svg-icons'
 import '../css/About.css'
 import ScrollAnimation from './ScrollAnimation.jsx'
+import Button from './Button.jsx'
 
 const About = () => {
   return (
@@ -59,9 +60,14 @@ const About = () => {
                 I focus on creating websites and applications that are functional, 
                 intuitive, and tailored to each project's needs.
             </span>
-            <button>
-                <a href="#contact-section">LET'S WORK TOGETHER</a>
-            </button>
+
+            <Button
+                className="about-me_button"
+                hRef="#contact-section"
+                textContent="LET'S WORK TOGETHER"
+                icon={faHandshake}
+            />
+
         </div>
         </ScrollAnimation>
     </section>
